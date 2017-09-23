@@ -53,9 +53,11 @@
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
-		<file alias="wallet">res/images/wallet.png</file>
-		<file alias="stat_logo">res/images/stat_logo.png</file>
 		<file alias="bkg">res/images/bkg.png</file>
+		<file alias="bkg2">res/images/bkg2.png</file>
+		<file alias="b1">res/images/b1.png</file>
+		<file alias="b2">res/images/b2.png</file>
+		<file alias="b3">res/images/b3.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.gif</file>

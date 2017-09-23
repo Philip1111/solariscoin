@@ -1,6 +1,7 @@
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
-
+#include <QDesktopServices>
+#include <QUrl>
 #include "walletmodel.h"
 #include "solariscoinunits.h"
 #include "optionsmodel.h"
@@ -194,4 +195,22 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::on_pushButton_clicked()
+{
+    QString link="https://www.cryptopia.co.nz/Exchange?market=XLR_BTC";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_2_clicked()
+{
+    QString link="https://www.coinexchange.io/market/XLR/BTC";
+       QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_3_clicked()
+{
+    QString link="http://explorer.solariscoin.com:3003/";
+       QDesktopServices::openUrl(QUrl(link));
 }
